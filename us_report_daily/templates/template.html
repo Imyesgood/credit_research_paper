@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="ko">
+<head><meta charset="utf-8"><title>Report</title></head>
+<body>
+  <h1>{{REPORT_DATE}} ({{REPORT_WEEKDAY}})</h1>
+  <h2>Market</h2>
+  <div>USD/KRW: {{USD/KRW|T0}} / {{USD/KRW|1D}} / {{USD/KRW|1M}} / {{USD/KRW|YTD}}</div>
+  <div>S&P500: {{S&P500|T0}} / {{S&P500|1D}} / {{S&P500|1M}} / {{S&P500|YTD}}</div>
+  <div>WTI: {{WTI|T0}} / {{WTI|1D}} / {{WTI|1M}} / {{WTI|YTD}}</div>
+
+  <h2>Summary</h2>
+  <div>채권: {{SUM_채권}}</div>
+  <div>증시: {{SUM_증시}}</div>
+  <div>유가: {{SUM_유가}}</div>
+  <div>환시: {{SUM_환시}}</div>
+
+  <h2>Speakers</h2>
+  {{SPEAKERS_HTML}}
+
+  <h2>Indicators</h2>
+  <table><tbody>{{INDICATORS_HTML}}</tbody></table>
+
+  <h2>Schedule</h2>
+  {{SCHEDULE_HTML}}
+</body>
+</html>
