@@ -1,0 +1,10 @@
+echo ".idea/
+__pycache__/
+*.pyc
+.venv/
+credit_flow_data.json
+report_data.json" > .gitignore
+
+git add .gitignore
+git commit -m "add gitignore"
+git push
